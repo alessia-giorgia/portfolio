@@ -1,0 +1,251 @@
+/****** GENERALE *******/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Piazzolla', serif;
+}
+
+a {
+	text-decoration: none;
+	color:black
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.active {
+  background: green; 
+  border-radius: 3px;
+}
+
+img {
+	width: 100%;
+}
+
+main {
+	min-height: calc(100vh - 173px - 127px);
+	padding-top: 189px;
+}
+
+.title {
+	font-size: 2.2rem;
+}
+
+
+
+/****** HEADER ******/
+header {
+	background: #ccffcc;
+	text-align: center;
+	position: fixed;
+    z-index: 1px;
+    width: 100%;
+}
+
+header img {
+	width: 160px;
+}
+
+header .logo-container {
+	padding: 20px;
+}
+
+
+
+/****** NAVIGAZIONE *****/
+nav ul {
+	list-style-type: none;
+}
+
+nav li {
+	display: inline-block;
+	padding: 8px 6px 8px 6px;
+	text-transform: uppercase;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+nav {
+	background: #00b36b;
+}
+
+}
+
+/****** GALLERY ******/
+
+#gallery img {
+ width: 100%
+}
+
+#gallery .item img {
+ float: left;
+ width: 50%;
+ padding: 15px;
+ 
+ }
+
+#gallery {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#gallery .caption {
+	background: #98AFC7;
+	padding: 10px;
+
+}
+
+#gallery .caption p {
+	margin: 0;
+}
+
+#gallery .picture {
+	line-height: 0;
+}
+
+
+}
+/*******ABOUT*******/
+
+#about img {
+	border-radius: 100%;
+	padding: 15px 0px;
+}
+
+/******CONTACT****/
+
+#contact ul{
+	list-style-type:none;
+	padding: 0; 
+}
+
+#contact li {
+	padding: 5px 0px;
+}
+
+#contact h1 {
+	font-size: 2.2rem;
+}
+
+
+
+
+/****** FOOTER ********/
+
+footer.main {
+	text-align: center;
+	padding: 15px;
+}
+
+footer.main img {
+	width: 24px;
+}
+footer.main p {
+	font-size: 1.2rem;
+}
+
+footer.main a {
+	display: inline-block;
+	padding: 5px 10px;
+}
+
+/***** MEDIA QUERIES*****/
+
+@media only screen and (min-width: 768px) {
+
+/****** GALLERY*****/
+
+#gallery .item img {
+width: 33.3333%;
+}
+
+#gallery .item;nth-child(3n + 1) {
+	clear: left;
+}
+
+/*****ABOUT*****/
+
+
+#about .profile-pic {
+	float: left;
+	width: 50%;
+	padding: 15px;
+}
+
+#about .description {
+	float: right;
+	width: 50%;
+	padding: 30px 15px 15px;
+}
+
+#about img {
+	padding: 25px;
+}
+
+/******CONTACT*******/
+
+#contact .info, #contact .contacts {
+	padding: 15px;
+	
+}
+
+#contact .info{
+	float: left;
+	width: 70%;
+}
+
+#contact .contacts {
+	float: right;
+	width: 30%;
+}
+
+#contact .material-icons {
+  float: left;
+
+} 
+
+
+@media only screen and (min-width: 767px) {
+
+/********GALLERY********/
+
+#gallery .item;nth-child(2n + 1) {
+	clear: left;
+}
+
+@media only screen and (min-width: 992px) {
+
+	nav li a {
+		transition: background .3s;
+}
+
+	nav li a:hover {
+	background: green; 
+	border-radius: 3px;
+}
+
+     #gallery .item {
+    transition: opacity .3s;
+}
+    #gallery .item:hover {
+    opacity: .7;
+}
+
+}
+
+
